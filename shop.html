@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop | WithBonsai</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body class="antialiased font-sans flex flex-col min-h-screen">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 glass-nav transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="index.html" class="flex items-center gap-2">
+                        <i class="fa-solid fa-leaf text-green-700 text-2xl"></i>
+                        <span class="font-serif text-3xl font-bold tracking-widest text-green-900">WITHBONSAI</span>
+                    </a>
+                </div>
+
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="index.html"
+                        class="text-gray-700 hover:text-green-700 font-medium transition-colors">Home</a>
+                    <a href="shop.html"
+                        class="text-green-800 hover:text-green-600 font-medium transition-colors border-b-2 border-green-700 pb-1">Shop</a>
+                    <a href="about.html"
+                        class="text-gray-700 hover:text-green-700 font-medium transition-colors">About</a>
+                    <a href="contact.html"
+                        class="text-gray-700 hover:text-green-700 font-medium transition-colors">Contact</a>
+                    <button class="text-gray-700 hover:text-green-700 transition">
+                        <i class="fa-solid fa-shopping-bag text-xl"></i>
+                    </button>
+                </div>
+
+                <div class="md:hidden flex items-center gap-4">
+                    <button class="text-gray-700 hover:text-green-700 transition">
+                        <i class="fa-solid fa-shopping-bag text-xl"></i>
+                    </button>
+                    <button id="mobile-menu-btn" class="text-gray-700 hover:text-green-700 focus:outline-none">
+                        <i class="fa-solid fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div id="mobile-menu"
+            class="hidden md:hidden bg-white/95 backdrop-blur-md border-t border-gray-200 shadow-xl absolute w-full left-0">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 text-center">
+                <a href="index.html"
+                    class="block px-3 py-3 text-gray-700 hover:text-green-700 font-medium border-b border-gray-100">Home</a>
+                <a href="shop.html" class="block px-3 py-3 text-green-800 font-bold border-b border-gray-100">Shop</a>
+                <a href="about.html"
+                    class="block px-3 py-3 text-gray-700 hover:text-green-700 font-medium border-b border-gray-100">About</a>
+                <a href="contact.html"
+                    class="block px-3 py-3 text-gray-700 hover:text-green-700 font-medium">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <div class="pt-32 pb-16 bg-gradient-to-br from-gray-50 to-gray-200 fade-in">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-4xl md:text-5xl font-serif font-bold text-gray-900 mb-4">Our Collection</h1>
+            <p class="text-gray-600 max-w-2xl mx-auto">Browse our exquisite selection of carefully cultured Japanese
+                Bonsai trees. Each tree is a unique living work of art.</p>
+        </div>
+    </div>
+
+    <!-- Shop Content -->
+    <section class="flex-grow py-12 slide-up">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Filter/Sort Header -->
+            <div class="flex flex-col md:flex-row justify-between items-center mb-10 pb-4 border-b border-gray-200">
+                <p class="text-gray-500 mb-4 md:mb-0">Showing 4 results</p>
+                <div class="flex gap-4">
+                    <select
+                        class="px-4 py-2 bg-white border border-gray-300 rounded focus:outline-none focus:border-green-600 text-sm">
+                        <option>Sort by: Featured</option>
+                        <option>Price: Low to High</option>
+                        <option>Price: High to Low</option>
+                        <option>Age: Oldest First</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Product Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+
+                <!-- Product 1 -->
+                <div class="bg-gray-50 rounded-2xl overflow-hidden shadow-md hover-scale group relative">
+                    <div
+                        class="absolute top-4 left-4 bg-green-100 text-green-800 text-xs font-bold px-3 py-1 rounded shadow-sm z-10 uppercase tracking-wide">
+                        Conifer
+                    </div>
+                    <div class="h-80 overflow-hidden relative">
+                        <img src="assets/images/pine.png" alt="Japanese Black Pine"
+                            class="w-full h-full object-cover transform transition-transform duration-700 group-hover:scale-110">
+                    </div>
+                    <div class="p-8">
+                        <h3 class="font-serif text-2xl font-bold text-gray-900 mb-2">Japanese Black Pine</h3>
+                        <p class="text-sm text-gray-500 mb-4 border-b border-gray-200 pb-4">Age: 45 Years | Pot: Ceramic
+                            Oval</p>
+                        <p class="text-sm text-gray-600 mb-6 italic">Symbolizes endurance and longevity. Features rugged
+                            bark and stiff, dark green needles.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-2xl font-bold text-green-800">$1,250</span>
+                            <button
+                                class="add-to-cart btn-primary p-3 px-5 rounded-full shadow text-sm font-semibold uppercase tracking-wide"
+                                data-product="Japanese Black Pine">
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="bg-gray-50 rounded-2xl overflow-hidden shadow-md hover-scale group relative">
+                    <div
+                        class="absolute top-4 left-4 bg-red-100 text-red-800 text-xs font-bold px-3 py-1 rounded shadow-sm z-10 uppercase tracking-wide">
+                        Deciduous
+                    </div>
+                    <div class="h-80 overflow-hidden relative">
+                        <img src="assets/images/maple.png" alt="Japanese Maple"
+                            class="w-full h-full object-cover transform transition-transform duration-700 group-hover:scale-110">
+                    </div>
+                    <div class="p-8">
+                        <h3 class="font-serif text-2xl font-bold text-gray-900 mb-2">Japanese Maple</h3>
+                        <p class="text-sm text-gray-500 mb-4 border-b border-gray-200 pb-4">Age: 32 Years | Pot: Glazed
+                            Rectangular</p>
+                        <p class="text-sm text-gray-600 mb-6 italic">Famous for its delicate, deeply lobed leaves that
+                            turn stunning shades of red in autumn.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-2xl font-bold text-green-800">$895</span>
+                            <button
+                                class="add-to-cart btn-primary p-3 px-5 rounded-full shadow text-sm font-semibold uppercase tracking-wide"
+                                data-product="Japanese Maple">
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="bg-gray-50 rounded-2xl overflow-hidden shadow-md hover-scale group relative">
+                    <div
+                        class="absolute top-4 left-4 bg-green-100 text-green-800 text-xs font-bold px-3 py-1 rounded shadow-sm z-10 uppercase tracking-wide">
+                        Conifer
+                    </div>
+                    <div class="h-80 overflow-hidden relative">
+                        <img src="assets/images/juniper.png" alt="Shimpaku Juniper"
+                            class="w-full h-full object-cover transform transition-transform duration-700 group-hover:scale-110">
+                    </div>
+                    <div class="p-8">
+                        <h3 class="font-serif text-2xl font-bold text-gray-900 mb-2">Shimpaku Juniper</h3>
+                        <p class="text-sm text-gray-500 mb-4 border-b border-gray-200 pb-4">Age: 60 Years | Pot:
+                            Unglazed Round</p>
+                        <p class="text-sm text-gray-600 mb-6 italic">Features striking deadwood (jin/shari) contrasting
+                            beautifully with vibrant green foliage.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-2xl font-bold text-green-800">$2,100</span>
+                            <button
+                                class="add-to-cart btn-primary p-3 px-5 rounded-full shadow text-sm font-semibold uppercase tracking-wide"
+                                data-product="Shimpaku Juniper">
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="bg-gray-50 rounded-2xl overflow-hidden shadow-md hover-scale group relative">
+                    <div
+                        class="absolute top-4 left-4 bg-blue-100 text-blue-800 text-xs font-bold px-3 py-1 rounded shadow-sm z-10 uppercase tracking-wide">
+                        Tropical
+                    </div>
+                    <div class="h-80 overflow-hidden relative">
+                        <img src="assets/images/ficus.png" alt="Ficus Retusa"
+                            class="w-full h-full object-cover transform transition-transform duration-700 group-hover:scale-110">
+                    </div>
+                    <div class="p-8">
+                        <h3 class="font-serif text-2xl font-bold text-gray-900 mb-2">Ficus Retusa</h3>
+                        <p class="text-sm text-gray-500 mb-4 border-b border-gray-200 pb-4">Age: 25 Years | Pot: Oval
+                            Ceramic</p>
+                        <p class="text-sm text-gray-600 mb-6 italic">Excellent for indoor growing. Features dramatic
+                            aerial roots and glossy, dark green leaves.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-2xl font-bold text-green-800">$450</span>
+                            <button
+                                class="add-to-cart btn-primary p-3 px-5 rounded-full shadow text-sm font-semibold uppercase tracking-wide"
+                                data-product="Ficus Retusa">
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-100 pt-12 pb-8 border-t border-gray-200 text-gray-600 mt-auto">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-sm">
+            <p>&copy; 2026 WithBonsai. Hand-crafted with devotion.</p>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

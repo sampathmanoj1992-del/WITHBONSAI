@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WithBonsai | Premium Bonsai Trees</title>
+    <meta name="description"
+        content="Discover the finest collection of premium Japanese Bonsai trees. We offer high-quality beautifully crafted bonsai trees for sale.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body class="antialiased font-sans">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 glass-nav transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="index.html" class="flex items-center gap-2">
+                        <i class="fa-solid fa-leaf text-green-700 text-2xl"></i>
+                        <span class="font-serif text-3xl font-bold tracking-widest text-green-900">WITHBONSAI</span>
+                    </a>
+                </div>
+
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="index.html"
+                        class="text-green-800 hover:text-green-600 font-medium transition-colors border-b-2 border-green-700 pb-1">Home</a>
+                    <a href="shop.html"
+                        class="text-gray-700 hover:text-green-700 font-medium transition-colors">Shop</a>
+                    <a href="about.html"
+                        class="text-gray-700 hover:text-green-700 font-medium transition-colors">About</a>
+                    <a href="contact.html"
+                        class="text-gray-700 hover:text-green-700 font-medium transition-colors">Contact</a>
+                    <button class="text-gray-700 hover:text-green-700 transition">
+                        <i class="fa-solid fa-shopping-bag text-xl"></i>
+                    </button>
+                </div>
+
+                <!-- Mobile menu button -->
+                <div class="md:hidden flex items-center gap-4">
+                    <button class="text-gray-700 hover:text-green-700 transition">
+                        <i class="fa-solid fa-shopping-bag text-xl"></i>
+                    </button>
+                    <button id="mobile-menu-btn" class="text-gray-700 hover:text-green-700 focus:outline-none">
+                        <i class="fa-solid fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu"
+            class="hidden md:hidden bg-white/95 backdrop-blur-md border-t border-gray-200 shadow-xl absolute w-full left-0">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 text-center">
+                <a href="index.html" class="block px-3 py-3 text-green-800 font-bold border-b border-gray-100">Home</a>
+                <a href="shop.html"
+                    class="block px-3 py-3 text-gray-700 hover:text-green-700 font-medium border-b border-gray-100">Shop</a>
+                <a href="about.html"
+                    class="block px-3 py-3 text-gray-700 hover:text-green-700 font-medium border-b border-gray-100">About</a>
+                <a href="contact.html"
+                    class="block px-3 py-3 text-gray-700 hover:text-green-700 font-medium">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="relative h-screen flex items-center justify-center hero-bg bg-cover bg-center">
+        <!-- Overlay -->
+        <div class="absolute inset-0 bg-black/40 bg-gradient-to-b from-black/20 to-black/70"></div>
+
+        <div class="relative z-10 text-center px-4 max-w-4xl mx-auto slide-up">
+            <span class="block text-green-300 tracking-widest uppercase text-sm font-semibold mb-4">Masterpiece
+                Collection</span>
+            <h1 class="text-5xl md:text-7xl font-bold text-white mb-6 font-serif leading-tight">Elevate Your Space
+                <br>With Living Art</h1>
+            <p class="text-lg md:text-xl text-gray-200 mb-10 max-w-2xl mx-auto font-light">
+                Discover the timeless beauty and tranquility of carefully cultivated, ancient Bonsai trees for your home
+                and garden.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="shop.html"
+                    class="btn-primary px-8 py-4 rounded-full font-medium text-lg uppercase tracking-wide inline-flex items-center justify-center gap-2">
+                    Shop Collection <i class="fa-solid fa-arrow-right"></i>
+                </a>
+                <a href="about.html"
+                    class="bg-transparent border border-white text-white hover:bg-white hover:text-gray-900 transition-colors duration-300 px-8 py-4 rounded-full font-medium text-lg uppercase tracking-wide">
+                    Our Story
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Featured Collection -->
+    <section class="py-24 bg-white fade-in">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <h2 class="text-3xl md:text-4xl font-serif font-bold text-gray-900 mb-4 text-center">Featured
+                    Masterpieces</h2>
+                <div class="h-1 w-20 bg-green-700 mx-auto rounded mb-6"></div>
+                <p class="text-gray-600">Carefully selected, our featured bonsai trees represent years of patient
+                    cultivation and artistic refinement.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+                <!-- Product 1 -->
+                <div class="bg-gray-50 rounded-2xl overflow-hidden shadow-md hover-scale group relative">
+                    <div
+                        class="absolute top-4 right-4 bg-white/90 backdrop-blur text-xs font-bold px-3 py-1 rounded-full text-green-700 z-10 shadow-sm uppercase tracking-wide">
+                        Premium
+                    </div>
+                    <div class="h-80 overflow-hidden relative">
+                        <img src="assets/images/pine.png" alt="Japanese Black Pine"
+                            class="w-full h-full object-cover transform transition-transform duration-700 group-hover:scale-110">
+                    </div>
+                    <div class="p-8">
+                        <h3 class="font-serif text-2xl font-bold text-gray-900 mb-2">Japanese Black Pine</h3>
+                        <p class="text-sm text-gray-500 mb-4 border-b border-gray-200 pb-4">Age: 45 Years | Pot: Ceramic
+                            Oval</p>
+                        <div class="flex justify-between items-center mt-4">
+                            <span class="text-2xl font-bold text-green-800">$1,250</span>
+                            <button class="add-to-cart btn-primary p-3 rounded-full shadow-lg"
+                                data-product="Japanese Black Pine">
+                                <i class="fa-solid fa-cart-plus pointer-events-none"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="bg-gray-50 rounded-2xl overflow-hidden shadow-md hover-scale group relative">
+                    <div
+                        class="absolute top-4 right-4 bg-white/90 backdrop-blur text-xs font-bold px-3 py-1 rounded-full text-green-700 z-10 shadow-sm uppercase tracking-wide">
+                        Best Seller
+                    </div>
+                    <div class="h-80 overflow-hidden relative">
+                        <img src="assets/images/maple.png" alt="Japanese Maple"
+                            class="w-full h-full object-cover transform transition-transform duration-700 group-hover:scale-110">
+                    </div>
+                    <div class="p-8">
+                        <h3 class="font-serif text-2xl font-bold text-gray-900 mb-2">Japanese Maple</h3>
+                        <p class="text-sm text-gray-500 mb-4 border-b border-gray-200 pb-4">Age: 32 Years | Pot: Glazed
+                            Rectangular</p>
+                        <div class="flex justify-between items-center mt-4">
+                            <span class="text-2xl font-bold text-green-800">$895</span>
+                            <button class="add-to-cart btn-primary p-3 rounded-full shadow-lg"
+                                data-product="Japanese Maple">
+                                <i class="fa-solid fa-cart-plus pointer-events-none"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="bg-gray-50 rounded-2xl overflow-hidden shadow-md hover-scale group relative">
+                    <div class="h-80 overflow-hidden relative">
+                        <img src="assets/images/juniper.png" alt="Shimpaku Juniper"
+                            class="w-full h-full object-cover transform transition-transform duration-700 group-hover:scale-110">
+                    </div>
+                    <div class="p-8">
+                        <h3 class="font-serif text-2xl font-bold text-gray-900 mb-2">Shimpaku Juniper</h3>
+                        <p class="text-sm text-gray-500 mb-4 border-b border-gray-200 pb-4">Age: 60 Years | Pot:
+                            Unglazed Round</p>
+                        <div class="flex justify-between items-center mt-4">
+                            <span class="text-2xl font-bold text-green-800">$2,100</span>
+                            <button class="add-to-cart btn-primary p-3 rounded-full shadow-lg"
+                                data-product="Shimpaku Juniper">
+                                <i class="fa-solid fa-cart-plus pointer-events-none"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-16 text-center">
+                <a href="shop.html"
+                    class="inline-block border-2 border-green-800 text-green-800 hover:bg-green-800 hover:text-white transition-all duration-300 font-semibold px-10 py-3 rounded-full uppercase tracking-wider text-sm">
+                    View Entire Collection
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Value Proposition / Banner -->
+    <section class="relative py-20 bg-gray-900 overflow-hidden">
+        <div class="absolute inset-0 opacity-10 bg-[url('assets/images/pine.png')] bg-cover bg-center"></div>
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
+            <i class="fa-solid fa-award text-5xl text-yellow-500 mb-6"></i>
+            <h2 class="text-3xl md:text-5xl font-serif font-bold mb-6">Unrivaled Quality & Heritage</h2>
+            <p class="max-w-2xl mx-auto text-gray-300 text-lg md:text-xl mb-10 font-light leading-relaxed">
+                Every bonsai we offer is a testament to decades of dedication. Our trees are sourced from master growers
+                and meticulously maintained in our local nursery to ensure they thrive in your care.
+            </p>
+            <div
+                class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12 text-left bg-black/30 backdrop-blur rounded-2xl p-8 border border-white/10">
+                <div class="flex items-start gap-4">
+                    <div class="w-12 h-12 bg-green-500/20 rounded-full flex items-center justify-center flex-shrink-0">
+                        <i class="fa-solid fa-truck-fast text-green-400"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-lg mb-1">Safe Shipping</h4>
+                        <p class="text-sm text-gray-400">Specialized packaging ensures your tree arrives completely
+                            secure and stress-free.</p>
+                    </div>
+                </div>
+                <div class="flex items-start gap-4">
+                    <div class="w-12 h-12 bg-green-500/20 rounded-full flex items-center justify-center flex-shrink-0">
+                        <i class="fa-solid fa-leaf text-green-400"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-lg mb-1">Expert Support</h4>
+                        <p class="text-sm text-gray-400">Lifetime guidance on watering, pruning, and caring for your
+                            specific species.</p>
+                    </div>
+                </div>
+                <div class="flex items-start gap-4">
+                    <div class="w-12 h-12 bg-green-500/20 rounded-full flex items-center justify-center flex-shrink-0">
+                        <i class="fa-solid fa-certificate text-green-400"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-lg mb-1">Authenticity</h4>
+                        <p class="text-sm text-gray-400">Comes with a certificate detailing the tree's history, species,
+                            and estimated age.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-100 pt-16 pb-8 border-t border-gray-200 text-gray-600">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12 border-b border-gray-300 pb-12">
+                <div class="col-span-1 md:col-span-2">
+                    <a href="index.html" class="flex items-center gap-2 mb-6">
+                        <i class="fa-solid fa-leaf text-green-700 text-2xl"></i>
+                        <span class="font-serif text-2xl font-bold tracking-widest text-gray-900">WITHBONSAI</span>
+                    </a>
+                    <p class="text-sm leading-relaxed mb-6 max-w-sm">
+                        Cultivating tranquility and connecting people with nature through beautifully designed,
+                        ethically sourced Bonsai trees since 1995.
+                    </p>
+                    <div class="flex gap-4">
+                        <a href="#"
+                            class="w-10 h-10 rounded-full bg-white flex items-center justify-center text-gray-700 hover:text-green-700 hover:shadow-md transition">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="#"
+                            class="w-10 h-10 rounded-full bg-white flex items-center justify-center text-gray-700 hover:text-green-700 hover:shadow-md transition">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                        <a href="#"
+                            class="w-10 h-10 rounded-full bg-white flex items-center justify-center text-gray-700 hover:text-green-700 hover:shadow-md transition">
+                            <i class="fa-brands fa-pinterest-p"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="font-bold text-gray-900 uppercase tracking-wider mb-6">Quick Links</h4>
+                    <ul class="space-y-3 text-sm">
+                        <li><a href="shop.html" class="hover:text-green-700 transition">Shop Catalog</a></li>
+                        <li><a href="about.html" class="hover:text-green-700 transition">Our Story</a></li>
+                        <li><a href="#" class="hover:text-green-700 transition">Care Guide</a></li>
+                        <li><a href="contact.html" class="hover:text-green-700 transition">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-bold text-gray-900 uppercase tracking-wider mb-6">Newsletter</h4>
+                    <p class="text-sm mb-4">Subscribe to get care tips, updates, and exclusive offers.</p>
+                    <form class="flex" onsubmit="event.preventDefault(); alert('Subscribed!');">
+                        <input type="email" placeholder="Your email"
+                            class="w-full px-4 py-2 bg-white border border-gray-300 rounded-l-md focus:outline-none focus:border-green-700 text-sm">
+                        <button type="submit"
+                            class="bg-green-800 text-white px-4 py-2 rounded-r-md hover:bg-green-900 transition">
+                            <i class="fa-solid fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="text-center text-xs">
+                <p>&copy; 2026 WithBonsai. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
